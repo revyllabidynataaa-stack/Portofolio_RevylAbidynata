@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio – Revyl Abidynata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="nav">
+        <a href="#home" class="logo">Revyl Abidynata</a>
+        <button class="burger" aria-label="Menu"
+            onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#illustration">Illustration</a>
+            <a href="#tipografi">Tipografi</a>
+            <a href="#bookcover">Book Cover</a>
+            <a href="#imaging">Digital Imaging</a>
+            <a href="#projects">Other Projects</a>
+            <a href="#contact" class="cta">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO / COVER ============ -->
+        <section class="hero" id="home">
+            <div class="hero-in">
+                <!-- Bagian Kiri (PORT) -->
+                <h1 class="big">
+                    <span class="l-p" style="--s: 1.1;">P</span>
+                    <span class="l-o1" style="--s: 0.95;">O</span>
+                    <span class="l-r" style="--s: 1.05;">R</span>
+                    <span class="l-t" style="--s: 1;">T</span>
+                    <span class="l-o3" style="--s: 0.95;">O</span>
+                    <small>INFORMATION</small>
+                </h1>
+
+                <!-- SVG Karakter 3D -->
+                <svg class="char" viewBox="0 0 90 256" aria-label="Karakter Ilustrasi Formal">
+                    <!-- Bayangan bawah -->
+                    <ellipse cx="45" cy="253" rx="32" ry="3.5" fill="rgba(0,0,0,.28)" />
+
+                    <!-- Celana Formal Navy Gelap -->
+                    <path d="M22 152h46l3 88q0 6-7 6H53q-5 0-6-5l-2-58-2 58q-1 5-6 5H30q-7 0-7-6z" fill="#141a29" />
+
+                    <!-- Sepatu Pantofel Hitam -->
+                    <rect x="19" y="238" width="23" height="14" rx="6" fill="#0d0d11" />
+                    <rect x="48" y="238" width="23" height="14" rx="6" fill="#0d0d11" />
+                    <ellipse cx="28" cy="240" rx="8" ry="2" fill="#2c2c35" />
+                    <ellipse cx="57" cy="240" rx="8" ry="2" fill="#2c2c35" />
+
+                    <!-- Jas Formal Navy (Badan Utama) -->
+                    <path d="M15 85q0-10 12-12l10-3h16l10 3q12 2 12 12l3 68H12z" fill="#1b2336" />
+
+                    <!-- Kemeja Putih & Kerah -->
+                    <polygon points="37,70 53,70 45,108" fill="#ffffff" />
+                    <!-- Dasi Hitam -->
+                    <polygon points="43,72 47,72 49,102 45,107 41,102" fill="#111115" />
+                    <!-- Kerah Jas Kiri & Kanan -->
+                    <polygon points="26,72 37,72 42,98 30,95" fill="#141a29" />
+                    <polygon points="64,72 53,72 48,98 60,95" fill="#141a29" />
+
+                    <!-- Tangan Bersedekap (Crossed Arms) -->
+                    <path d="M13 88 Q 10 115 45 120" stroke="#1b2336" stroke-width="12" fill="none"
+                        stroke-linecap="round" />
+                    <path d="M77 88 Q 80 115 42 122" stroke="#1e273d" stroke-width="12" fill="none"
+                        stroke-linecap="round" />
+                    <rect x="36" y="117" width="10" height="4" rx="1" fill="#ffffff" transform="rotate(-10 41 119)" />
+                    <ellipse cx="40" cy="120" rx="4" ry="2.5" fill="#e2a882" />
+
+                    <!-- Leher -->
+                    <rect x="38" y="58" width="14" height="15" rx="4" fill="#e2a882" />
+
+                    <!-- RAMBUT BELAKANG -->
+                    <ellipse cx="45" cy="30" rx="38" ry="30" fill="#14120f" />
+
+                    <!-- Telinga -->
+                    <circle cx="16" cy="46" r="6" fill="#f0bd95" />
+                    <circle cx="74" cy="46" r="6" fill="#f0bd95" />
+
+                    <!-- Bentuk Wajah -->
+                    <ellipse cx="45" cy="42" rx="29" ry="28" fill="#f6cba5" />
+
+                    <!-- Alis -->
+                    <path d="M27 36q6-3 11 0M52 36q6-3 11 0" stroke="#14120f" stroke-width="1.6" fill="none"
+                        stroke-linecap="round" />
+
+                    <!-- Mata -->
+                    <ellipse cx="33" cy="47" rx="6.5" ry="7.5" fill="#3a2211" />
+                    <ellipse cx="57" cy="47" rx="6.5" ry="7.5" fill="#3a2211" />
+                    <circle cx="35" cy="44" r="2.4" fill="#fff" />
+                    <circle cx="59" cy="44" r="2.4" fill="#fff" />
+                    <circle cx="31" cy="50" r="1.2" fill="#fff" />
+                    <circle cx="55" cy="50" r="1.2" fill="#fff" />
+
+                    <!-- Hidung & Senyum -->
+                    <path d="M38 59q7 5 14 0" stroke="#a5532f" stroke-width="1.8" fill="none" stroke-linecap="round" />
+                    <ellipse cx="25" cy="56" rx="4" ry="2.5" fill="#f0a58b" opacity=".6" />
+                    <ellipse cx="65" cy="56" rx="4" ry="2.5" fill="#f0a58b" opacity=".6" />
+
+                    <!-- RAMBUT DEPAN (Presisi Seperti Karakter Awal) -->
+                    <path d="M13 40Q10 6 45 4Q80 6 77 40Q71 22 59 25Q51 13 40 25Q24 17 13 40Z" fill="#14120f" />
+                    <circle cx="22" cy="10" r="6" fill="#14120f" />
+                    <circle cx="70" cy="9" r="7" fill="#14120f" />
+                    <circle cx="46" cy="2" r="7" fill="#14120f" />
+                </svg>
+
+                <!-- Bagian Kanan (FOLIO) -->
+                <h1 class="big r">
+                    <span class="l-f" style="--s: 1.05;">F</span>
+                    <span class="l-o2" style="--s: 0.92;">O</span>
+                    <span class="l-l" style="--s: 1.12;">L</span>
+                    <span class="l-i" style="--s: 0.98;">I</span>
+                    <span class="l-o3" style="--s: 1.02;">O</span>
+                    <small>SYSTEM STUDENT</small>
+                </h1>
+            </div>
+
+            <!-- Tombol Scroll dengan Timer Countdown -->
+            <a href="#introduction" class="scroll">Scroll down in <span id="countdown">5s</span></a>
+        </section>
+
+        <!-- ============ INTRODUCTION ============ -->
+        <section class="intro-section" id="introduction">
+            <div class="intro-container">
+                <!-- Bagian Foto Profil dengan Frame Estetik -->
+                <div class="intro-photo-wrapper">
+                    <div class="photo-glow"></div>
+                    <div class="photo-card">
+                        <!-- Ganti src ini dengan foto asli/SVG karakter kamu -->
+                        <img src="" alt="Foto Profil" class="intro-img" />
+                    </div>
+                </div>
+
+                <!-- Bagian Konten Teks -->
+                <div class="intro-content">
+                    <span class="sub-badge">ABOUT ME</span>
+                    <h2 class="intro-title">INTRODUCTION</h2>
+
+                    <h3 class="my-name">Revyl Abidynata</h3>
+                    <p class="bio-text">
+                        Hi! I'm an Information Systems student with an interest in web development and technology. I
+                        enjoy learning new things, building projects, and exploring how technology can solve everyday
+                        problems.
+                    </p>
+
+                    <!-- Software Skills -->
+                    <div class="software-section">
+                        <h4>SOFTWARE SKILLS</h4>
+                        <div class="software-badges">
+                            <span class="badge ai">Ai</span>
+                            <span class="badge ps">Ps</span>
+                            <span class="badge id">Id</span>
+                            <span class="badge pr">Pr</span>
+                            <span class="badge cd">Cd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTENT ============ -->
+        <section class="sec alt" id="content">
+            <div class="wrap reveal">
+                <h2 class="t center">CONTENT</h2>
+                <ol class="nums">
+                    <li><a href="#illustration"><b>01</b><span>ILUSTRASI</span></a></li>
+                    <li><a href="#tipografi"><b>02</b><span>TIPOGRAFI</span></a></li>
+                    <li><a href="#bookcover"><b>03</b><span>COVER BUKU</span></a></li>
+                    <li><a href="#imaging"><b>04</b><span>DIGITAL IMAGING</span></a></li>
+                    <li><a href="#projects"><b>05</b><span>PROYEK LAINNYA</span></a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ ILLUSTRATION ============ -->
+        <section class="sec" id="illustration">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h2 class="t">ILLUSTRATION</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="grid8">
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#ece3cf" /><text x="22" y="10" font-size="9" fill="#d9442b"
+                            text-anchor="middle" font-family="Bebas Neue">PEACE</text>
+                        <circle cx="22" cy="25" r="6" fill="#e0572f" />
+                        <rect x="15" y="31" width="14" height="14" rx="3" fill="#2b2b2b" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#36b7d6" />
+                        <path d="M12 42V22a10 10 0 0 1 20 0v20l-3.3-3.3-3.3 3.3-3.4-3.3-3.3 3.3-3.4-3.3z"
+                            fill="#f4f8fa" />
+                        <circle cx="18" cy="23" r="1.8" fill="#223" />
+                        <circle cx="26" cy="23" r="1.8" fill="#223" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#3aa9d8" />
+                        <circle cx="20" cy="17" r="5" fill="#f3c59b" />
+                        <rect x="14" y="23" width="13" height="16" rx="4" fill="#f08a24" />
+                        <rect x="26" y="26" width="14" height="4" rx="2" fill="#7a3d12" transform="rotate(-35 26 28)" />
+                        <rect x="15" y="38" width="4" height="9" fill="#243" />
+                        <rect x="22" y="38" width="4" height="9" fill="#243" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#5b1f9e" />
+                        <circle cx="12" cy="32" r="6" fill="none" stroke="#111" stroke-width="2.5" />
+                        <circle cx="33" cy="32" r="6" fill="none" stroke="#111" stroke-width="2.5" />
+                        <path d="M12 32l8-10h8l5 10M20 22l-3-5h-4" stroke="#111" stroke-width="2.5" fill="none" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#e9e1cc" />
+                        <ellipse cx="22" cy="14" rx="7" ry="8" fill="#1d1d1d" />
+                        <rect x="14" y="22" width="16" height="20" rx="6" fill="#2a2a2a" />
+                        <rect x="16" y="42" width="5" height="7" fill="#111" />
+                        <rect x="23" y="42" width="5" height="7" fill="#111" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#7ec17a" />
+                        <circle cx="22" cy="12" r="5" fill="#f1c29a" />
+                        <rect x="16" y="18" width="12" height="12" rx="3" fill="#2d6cdf" />
+                        <rect x="16" y="30" width="5" height="16" fill="#f2c21b" />
+                        <rect x="23" y="30" width="5" height="16" fill="#f2c21b" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#8fd0e8" />
+                        <circle cx="10" cy="38" r="7" fill="none" stroke="#223" stroke-width="2" />
+                        <circle cx="34" cy="38" r="7" fill="none" stroke="#223" stroke-width="2" />
+                        <path d="M10 38l9-12h10l5 12M19 26l-2-4h-5" stroke="#223" stroke-width="2" fill="none" />
+                        <circle cx="22" cy="14" r="4" fill="#f1c29a" />
+                        <rect x="18" y="19" width="9" height="9" rx="3" fill="#e8567a" />
+                    </svg>
+                    <svg viewBox="0 0 44 51">
+                        <rect width="44" height="51" fill="#c9b49a" />
+                        <circle cx="22" cy="14" r="5" fill="#e8b88f" />
+                        <rect x="15" y="20" width="14" height="16" rx="4" fill="#7b3b2a" />
+                        <rect x="16" y="36" width="5" height="11" fill="#2a2a2a" />
+                        <rect x="23" y="36" width="5" height="11" fill="#2a2a2a" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TIPOGRAFI ============ -->
+        <section class="sec alt" id="tipografi">
+            <div class="wrap tipo reveal">
+                <div>
+                    <h2 class="t">TIPOGRAFI</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="tgrid">
+                    <div class="tt black"><span class="cup">☕</span><b>Otak</b><em>P</em><em>I</em></div>
+                    <div class="tt white"><span class="mk">Sekarang<br>Aja!<br><small>Dengan<br>Besok</small></span>
+                    </div>
+                    <div class="tt cream"><span class="mk o">AWALI PAGI<br>DENGAN<br><small>SYUKUR</small></span></div>
+                    <div class="tt black2"><span class="mk f">Menyala<br>Abangkuu</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BOOK COVER ============ -->
+        <section class="sec" id="bookcover">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h2 class="t">BOOK COVER</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <svg class="books" viewBox="0 0 207 100">
+                    <polygon points="128,10 170,-4 194,10 152,26" fill="#8fd1c0" />
+                    <polygon points="152,26 194,10 194,14 152,30" fill="#58a193" />
+                    <polygon points="128,10 152,26 152,30 128,14" fill="#3f7f73" />
+                    <circle cx="160" cy="10" r="5" fill="#f7d36b" opacity=".9" />
+                    <circle cx="172" cy="6" r="3.5" fill="#f08a6a" opacity=".9" />
+                    <polygon points="30,52 66,39 90,52 54,66" fill="#20272c" />
+                    <polygon points="54,66 90,52 90,57 54,71" fill="#0d1215" />
+                    <polygon points="30,52 54,66 54,71 30,57" fill="#111a1e" />
+                    <polygon points="42,52 60,46 70,52 52,58" fill="#d8b24d" opacity=".85" />
+                    <polygon points="110,56 150,42 176,56 136,71" fill="#c8cf72" />
+                    <polygon points="136,71 176,56 176,61 136,76" fill="#8a9246" />
+                    <polygon points="110,56 136,71 136,76 110,61" fill="#6a7230" />
+                    <polygon points="124,56 146,48 158,56 136,64" fill="#e6773e" opacity=".85" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- ============ DIGITAL IMAGING ============ -->
+        <section class="sec alt" id="imaging">
+            <div class="wrap imaging reveal">
+                <div>
+                    <h2 class="t">DIGITAL IMAGING</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="collage">
+                    <div class="ph c1"></div>
+                    <div class="ph c2"></div>
+                    <div class="ph c3"></div>
+                    <div class="ph c4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ OTHER PROJECTS ============ -->
+        <section class="sec" id="projects">
+            <div class="wrap reveal">
+                <h2 class="t center big2">OTHER PROJECTS</h2>
+                <p class="p center narrow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+            </div>
+        </section>
+
+        <!-- Merchandise -->
+        <section class="sec merch alt" id="merch">
+            <div class="spot"></div>
+            <svg class="lamp" viewBox="0 0 30 32">
+                <line x1="15" y1="0" x2="15" y2="9" stroke="#8fb6c4" stroke-width="1" />
+                <path d="M5 22 L10 9 H20 L25 22Z" fill="#101c23" />
+                <ellipse cx="15" cy="22" rx="10" ry="2" fill="#fff6c8" />
+            </svg>
+            <div class="wrap split reveal">
+                <div>
+                    <h3 class="t sm">MERCHANDISE<br>POLITEKNIK NEGERI JAKARTA</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="p out">Output Desain:<br>– Lanyard<br>– Mug<br>– Sticker Pack</p>
+                </div>
+                <div class="stage">
+                    <div class="box b1"><i class="poster"></i><i class="poster p2"></i></div>
+                    <div class="box b2"><i class="mug"></i><i class="mug m2"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jar Label -->
+        <section class="sec" id="jar">
+            <div class="wrap split rev reveal">
+                <div class="jarwrap">
+                    <div class="jarbox">
+                        <div class="cake"></div>
+                    </div>
+                    <div class="lbls"><i></i><i></i><i></i><i></i><i class="l2"></i><i class="l2"></i><i
+                            class="l2"></i><i class="l2"></i></div>
+                    <div class="strip"><span>NAMA BRAND</span></div>
+                </div>
+                <div>
+                    <h3 class="t sm">JAR LABEL<br>DESIGN</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="p out">Output Desain:<br>– Label Jar<br>– Label Tutup</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Profile -->
+        <section class="sec alt" id="brand">
+            <div class="wrap split reveal">
+                <div>
+                    <h3 class="t sm">BRAND PROFILE<br>BOOK DESIGN</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore.</p>
+                    <p class="p out">Output Desain:<br>– Cover Buku<br>– Isi Buku</p>
+                </div>
+                <div class="pages">
+                    <div class="pg"><i></i><i></i></div>
+                    <div class="pg"><b></b></div>
+                    <div class="pg"><b></b></div>
+                    <div class="pg"><i></i><i></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed Design – Internship -->
+        <section class="sec feed1" id="feed">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h3 class="t sm">FEED<br>DESIGN</h3>
+                    <div>
+                        <p class="t intern">INTERNSHIP</p>
+                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.</p>
+                    </div>
+                </div>
+                <div class="feedrow">
+                    <div class="fgrid blue"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    <div class="phones">
+                        <div class="phone" style="transform:rotate(-4deg)">
+                            <div class="scr s1"></div>
+                        </div>
+                        <div class="phone" style="transform:rotate(3deg) translateY(14%)">
+                            <div class="scr s2"></div>
+                        </div>
+                    </div>
+                    <div class="fgrid top"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed Design 2 -->
+        <section class="sec alt" id="feed2">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h3 class="t sm">FEED DESIGN</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="feedrow two">
+                    <div class="cards"><i class="c1"></i><i class="c2"></i></div>
+                    <div class="phone big">
+                        <div class="scr s3"></div>
+                    </div>
+                    <div class="cards"><i class="c3"></i><i class="c4"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vector Art -->
+        <section class="sec" id="vector">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h3 class="t sm">VECTOR ART</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="vgrid">
+                    <div class="v"><svg viewBox="0 0 50 52">
+                            <rect width="50" height="52" fill="#15171a" />
+                            <ellipse cx="25" cy="22" rx="11" ry="12" fill="#2a2e33" />
+                            <rect x="15" y="20" width="20" height="8" rx="3" fill="#7fd6ff" />
+                            <rect x="13" y="32" width="24" height="20" rx="6" fill="#23272b" />
+                        </svg></div>
+                    <div class="v"><svg viewBox="0 0 50 52">
+                            <rect width="50" height="52" fill="#101b21" />
+                            <path d="M6 36q10-24 30-14t8 22q-14 6-24 0t-14-8z" fill="#1fb2c5" />
+                            <circle cx="34" cy="26" r="5" fill="#f4f4f4" />
+                        </svg></div>
+                    <div class="v"><svg viewBox="0 0 50 52">
+                            <rect width="50" height="52" fill="#1a1a1a" />
+                            <circle cx="12" cy="38" r="7" fill="none" stroke="#e8e8e8" stroke-width="2.4" />
+                            <circle cx="40" cy="38" r="7" fill="none" stroke="#e8e8e8" stroke-width="2.4" />
+                            <path d="M12 38l10-14h12l6 14M22 24l-4-6h-6" stroke="#e8e8e8" stroke-width="2.4"
+                                fill="none" />
+                        </svg></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional -->
+        <section class="sec alt" id="promo">
+            <div class="wrap reveal">
+                <div class="head">
+                    <h3 class="t sm">PROMOTIONAL CONTENT DESIGN</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="feedrow two">
+                    <div class="posters">
+                        <i class="r1"><b>GAMING</b></i><i class="r2"><b>MOUSE</b></i>
+                    </div>
+                    <div class="phone big">
+                        <div class="scr s4"></div>
+                    </div>
+                    <div class="posters">
+                        <i class="r3"><b>HEADSET</b></i><i class="r4"><b>KEYBOARD</b></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="sec contact" id="contact">
+            <div class="wrap center reveal">
+                <h2 class="t big2">LET'S WORK TOGETHER</h2>
+                <p class="p narrow">Tertarik berkolaborasi? Hubungi saya lewat kontak di bawah ini.</p>
+                <div class="links">
+                    <a href="mailto:email@kamu.com">email@kamu.com</a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://behance.net/" target="_blank" rel="noopener">Behance</a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>© 2026 Nama Lengkap — Illustrator & Graphic Designer</footer>
+
+    <script>
+        // animasi muncul saat di-scroll
+        const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+        // navbar berubah saat scroll + tutup menu mobile saat link diklik
+        const nav = document.getElementById('nav');
+        const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+        addEventListener('scroll', onScroll, { passive: true }); onScroll();
+        nav.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let timeLeft = 5;
+            const countdownEl = document.getElementById('countdown');
+            const scrollBtn = document.querySelector('.scroll');
+            const targetSection = document.getElementById('introduction');
+
+            // Menjalankan hitung mundur (countdown) tiap 1 detik
+            let countdownInterval = setInterval(() => {
+                timeLeft--;
+                if (countdownEl) {
+                    countdownEl.textContent = timeLeft;
+                }
+
+                // Jika waktu habis (0s), otomatis scroll ke section berikutnya
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    if (scrollBtn) {
+                        scrollBtn.innerHTML = "Scroll<i></i>";
+                    }
+                }
+            }, 1000);
+
+            // Fungsi untuk membatalkan auto-scrolling jika user melakukan interaksi manual
+            const cancelAutoScroll = () => {
+                clearInterval(countdownInterval);
+                if (scrollBtn) {
+                    scrollBtn.innerHTML = "Scroll<i></i>";
+                }
+                // Hapus event listener setelah dibatalkan
+                window.removeEventListener('wheel', cancelAutoScroll);
+                window.removeEventListener('touchstart', cancelAutoScroll);
+                window.removeEventListener('mousedown', cancelAutoScroll);
+            };
+
+            // Mendeteksi interaksi scroll/klik manual dari user
+            window.addEventListener('wheel', cancelAutoScroll, { passive: true });
+            window.addEventListener('touchstart', cancelAutoScroll, { passive: true });
+            window.addEventListener('mousedown', cancelAutoScroll, { passive: true });
+
+            // Jika tombol scroll diklik manual oleh user
+            if (scrollBtn) {
+                scrollBtn.addEventListener('click', (e) => {
+                    clearInterval(countdownInterval);
+                    scrollBtn.innerHTML = "Scroll<i></i>";
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
