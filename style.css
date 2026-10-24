@@ -1155,12 +1155,25 @@ footer {
         justify-content: center
     }
 
-    .char {
-        order: -1;
-        width: min(40vw, 34svh)
+    .big {
+        line-height: 1 !important;
+        padding-bottom: 22px !important;
+        margin-bottom: 0 !important;
     }
 
-    .big { padding-bottom: 40px }
+    /* 2. Rapikan posisi subteks INFORMATION & SYSTEM STUDENT agar pas di bawah masing-masing kata */
+    .big small {
+        font-size: clamp(0.4rem, 2.2vw, 0.75rem) !important;
+        letter-spacing: 0.15em !important;
+        bottom: 0 !important;
+    }
+
+    /* 3. Pastikan SVG karakter menyesuaikan proporsi tanpa menabrak teks */
+    .char {
+        min-width: unset !important;
+        height: auto !important;
+        max-height: 38svh !important;
+    }
 }
 
 @media (prefers-reduced-motion:reduce) {
