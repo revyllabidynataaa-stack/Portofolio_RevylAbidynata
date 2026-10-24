@@ -22,7 +22,7 @@
             onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
         <nav>
             <a href="#introduction">Introduction</a>
-            <a href="#illustration">Illustration</a>
+            <a href="#certifications">Certifications</a>
             <a href="#tipografi">Tipografi</a>
             <a href="#bookcover">Book Cover</a>
             <a href="#imaging">Digital Imaging</a>
@@ -150,13 +150,21 @@
 
                     <h3 class="my-name">Revyl Abidynata</h3>
                     <p class="bio-text">
-                        Hello! I am an Information Systems student at Universitas Negeri Surabaya with an interest in technology, business, administration, and personal development.
+                        Hello! I am an Information Systems student at Universitas Negeri Surabaya with an interest in
+                        technology, business, administration, and personal development.
 
-I gained practical work experience as an administrative intern at PT Jasa Raharja, where I learned about administrative tasks, data management, and workplace responsibilities. I also participated in Cisco-related activities to expand my knowledge and understanding of technology.
+                        I gained practical work experience as an administrative intern at PT Jasa Raharja, where I
+                        learned about administrative tasks, data management, and workplace responsibilities. I also
+                        participated in Cisco-related activities to expand my knowledge and understanding of technology.
 
-Beyond academics, I have been actively involved in organizational and extracurricular activities, including the 2025 Riau Anti-Drug Student Ambassador program, Paskibra, Scouts, and traditional dance. These experiences have helped me develop discipline, teamwork, communication, and leadership skills.
+                        Beyond academics, I have been actively involved in organizational and extracurricular
+                        activities, including the 2025 Riau Anti-Drug Student Ambassador program, Paskibra, Scouts, and
+                        traditional dance. These experiences have helped me develop discipline, teamwork, communication,
+                        and leadership skills.
 
-I am always eager to learn new things, explore new opportunities, and improve my abilities. My goal is to combine my knowledge of technology and business with my practical experience to create meaningful contributions in the future.
+                        I am always eager to learn new things, explore new opportunities, and improve my abilities. My
+                        goal is to combine my knowledge of technology and business with my practical experience to
+                        create meaningful contributions in the future.
                     </p>
 
                     <!-- Software Skills -->
@@ -174,17 +182,55 @@ I am always eager to learn new things, explore new opportunities, and improve my
             </div>
         </section>
 
-        <!-- ============ CONTENT ============ -->
-        <section class="sec alt" id="content">
+        <section class="sec alt" id="certifications">
             <div class="wrap reveal">
-                <h2 class="t center">CONTENT</h2>
-                <ol class="nums">
-                    <li><a href="#illustration"><b>01</b><span>ILUSTRASI</span></a></li>
-                    <li><a href="#tipografi"><b>02</b><span>TIPOGRAFI</span></a></li>
-                    <li><a href="#bookcover"><b>03</b><span>COVER BUKU</span></a></li>
-                    <li><a href="#imaging"><b>04</b><span>DIGITAL IMAGING</span></a></li>
-                    <li><a href="#projects"><b>05</b><span>PROYEK LAINNYA</span></a></li>
-                </ol>
+                <h2 class="t center">CERTIFICATIONS</h2>
+
+                <div class="cert-grid">
+                    <!-- Card 1 -->
+                    <div class="cert-card" onclick="toggleCert(this)">
+                        <div class="cert-card-inner">
+                            <div class="cert-badge">01</div>
+                            <h3 class="cert-title">Sertifikat Cisco</h3>
+                            <p class="cert-issuer">Cisco Networking Academy</p>
+                            <p class="cert-date">2024</p>
+                        </div>
+                        <!-- Gambar Sertifikat yang akan keluar seperti surat -->
+                        <div class="cert-letter-popup">
+                            <img src="image/Screenshot 2026-10-24 151108.png" alt="Sertifikat Cisco Academy">
+                            <span class="close-hint">Klik untuk menutup</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="cert-card" onclick="toggleCert(this)">
+                        <div class="cert-card-inner">
+                            <div class="cert-badge">02</div>
+                            <h3 class="cert-title">Sertifikat Lomba Sumatera Networking Conpetition VIII</h3>
+                            <p class="cert-issuer">Cisco NetRiders</p>
+                            <p class="cert-date">2025</p>
+                            <p style="color: gray;">click to see the certification</p>
+                        </div>
+                        <div class="cert-letter-popup">
+                            <img src="image/Screenshot 2026-10-24 151133.png" alt="Sertifikat Cisco NetRiders">
+                            <span class="close-hint">Klik untuk menutup</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="cert-card" onclick="toggleCert(this)">
+                        <div class="cert-card-inner">
+                            <div class="cert-badge">03</div>
+                            <h3 class="cert-title">Sertifikat anti bullying</h3>
+                            <p class="cert-issuer">Comunitas Pelajar Anti Bullying Provinsi Riau</p>
+                            <p class="cert-date">2025</p>
+                        </div>
+                        <div class="cert-letter-popup">
+                            <img src="image/WhatsApp Image 2026-10-24 at 3.10.22 PM.jpeg" alt="Sertifikat Cover Buku">
+                            <span class="close-hint">Klik untuk menutup</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -558,6 +604,21 @@ I am always eager to learn new things, explore new opportunities, and improve my
                 });
             }
         });
+
+        function toggleCert(card) {
+            // Cek apakah card ini sudah aktif atau belum
+            const isActive = card.classList.contains('active');
+
+            // Tutup semua card terlebih dahulu
+            document.querySelectorAll('.cert-card').forEach(c => {
+                c.classList.remove('active');
+            });
+
+            // Jika tadinya belum aktif, aktifkan card yang diklik
+            if (!isActive) {
+                card.classList.add('active');
+            }
+        }
     </script>
 </body>
 
